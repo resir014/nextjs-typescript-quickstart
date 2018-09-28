@@ -1,0 +1,10 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": ["tslint-config-blvd/react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
+  "rules": {
+    "prettier": true
+  }
+}
