@@ -7,6 +7,7 @@ This is an example setup of Next.js building on top of the [official TypeScript 
 - Support for TS' `baseUrl` with `babel-plugin-module-resolver`
 - Simple styling structure with `styled-jsx`
 - Basic TSLint and Prettier setup
+- TypeScript typechecking as part of `test` script (ready to plug into any CI)
 
 ## How to use
 
