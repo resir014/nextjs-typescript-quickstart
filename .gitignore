@@ -5,6 +5,9 @@
 # Build directory
 .next/
 
+# Static export path
+out/
+
 # Logs
 logs
 *.log
