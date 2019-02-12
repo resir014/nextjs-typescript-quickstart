@@ -1,4 +1,9 @@
-const withPlugins = require('next-compose-plugins')
 const withTypescript = require('@zeit/next-typescript')
 
-module.exports = withPlugins([[withTypescript]])
+const nextConfig = {
+  target: process.env.BUILD_TARGET || 'server'
+}
+
+console.log(nextConfig)
+
+module.exports = withTypescript(nextConfig)
