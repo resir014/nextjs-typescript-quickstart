@@ -15,7 +15,7 @@
     "lint": "eslint \"**/*.{ts,tsx}\" \"*.config.js\"",
     "now-build": "cross-env BUILD_TARGET=serverless next build",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "babel-plugin-module-resolver": "^3.2.0",
