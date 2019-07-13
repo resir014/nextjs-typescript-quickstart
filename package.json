@@ -31,11 +31,11 @@
     "@types/react-dom": "^16.8.4",
     "@types/styled-jsx": "^2.2.8",
     "cross-env": "^5.2.0",
+    "eslint": "5.16.0",
+    "eslint-config-blvd": "^0.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2",
-    "tslint": "^5.12.1",
-    "tslint-config-blvd": "^1.2.1",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.5.3"
   }
 }
