@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"./**/*.{ts,tsx}\"",
-    "lint": "tslint \"./**/*.{ts,tsx}\" -p tsconfig.json",
+    "lint": "eslint \"**/*.{ts,tsx}\" \"*.config.js\"",
     "now-build": "cross-env BUILD_TARGET=serverless next build",
     "test": "npm run type-check && npm run lint",
     "type-check": "tsc"

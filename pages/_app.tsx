@@ -1,8 +1,9 @@
+import * as React from 'react'
 import App, { Container, AppContext } from 'next/app'
 import Head from 'next/head'
 
 export default class MyApp extends App {
-  static async getInitialProps({ Component, ctx }: AppContext) {
+  public static async getInitialProps({ Component, ctx }: AppContext) {
     let pageProps = {}
 
     if (Component.getInitialProps) {
@@ -12,7 +13,7 @@ export default class MyApp extends App {
     return { pageProps }
   }
 
-  render() {
+  public render() {
     const { Component, pageProps } = this.props
 
     return (

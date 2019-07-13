@@ -3,6 +3,7 @@ module.exports = {
   extends: ['blvd/react', 'prettier', 'prettier/@typescript-eslint', 'prettier/react', 'plugin:prettier/recommended'],
   plugins: ['prettier'],
   rules: {
+    'jsx-a11y/anchor-is-valid': 'off',
     'prettier/prettier': 'error'
   },
   overrides: [
@@ -19,6 +20,7 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-vars': 'off',
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
+        'import/no-unresolved': 'off',
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': ['off'],
         '@typescript-eslint/no-explicit-any': 'off',
