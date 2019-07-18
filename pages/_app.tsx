@@ -1,5 +1,5 @@
 import * as React from 'react'
-import App, { Container, AppContext } from 'next/app'
+import App, { Container } from 'next/app'
 import Head from 'next/head'
 
 export default class MyApp extends App {
