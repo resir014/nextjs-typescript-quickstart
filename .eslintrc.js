@@ -4,6 +4,7 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'prettier/prettier': 'error'
   },
   overrides: [

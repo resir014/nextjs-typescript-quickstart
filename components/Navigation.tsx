@@ -42,6 +42,7 @@ const Navigation: React.SFC = () => (
 
       .left {
         margin-right: 1.5rem;
+        user-select: none;
       }
 
       .right {

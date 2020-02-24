@@ -2,6 +2,8 @@ import * as React from 'react'
 import App, { Container } from 'next/app'
 import Head from 'next/head'
 
+import 'modern-normalize'
+
 export default class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props

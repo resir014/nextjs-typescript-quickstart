@@ -1,5 +1,5 @@
-import distanceInWords from 'date-fns/distance_in_words'
+import formatDistance from 'date-fns/formatDistance'
 
-const relativeTime = (date: Date) => `${distanceInWords(Date.now(), date)} ago`
+const relativeTime = (date: Date) => `${formatDistance(Date.now(), date)} ago`
 
 export default relativeTime
