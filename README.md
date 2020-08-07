@@ -4,9 +4,8 @@
 
 This is an example setup of Next.js building on top of the [official TypeScript example](https://github.com/zeit/next.js/tree/master/examples/with-typescript). It adds the following:
 
-- Support for TS' `baseUrl` with `babel-plugin-module-resolver`
-- Simple styling structure with `styled-jsx`
-- Basic TSLint and Prettier setup
+- Simple styling structure with [CSS Modules](https://github.com/css-modules/css-modules)
+- Basic ESLint and Prettier setup
 - TypeScript typechecking as part of `test` script (ready to plug into any CI)
 
 ## How to use
@@ -16,9 +15,9 @@ This is an example setup of Next.js building on top of the [official TypeScript 
 Install it and run:
 
 ```bash
-npm install
-npm run dev
-# or
 yarn
 yarn dev
+# or
+npm install
+npm run dev
 ```
