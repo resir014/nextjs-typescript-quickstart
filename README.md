@@ -11,14 +11,6 @@ This is an example setup of Next.js building on top of the [official TypeScript 
 
 ## How to use
 
-### Using now
-
-Click the button below to deploy instantly with [now](https://zeit.co/now).
-
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/resir014/nextjs-typescript-quickstart)
-
-### Download manually
-
 [Download the example](https://github.com/resir014/nextjs-typescript-quickstart/archive/master.zip) and then unzip it.
 
 Install it and run:
