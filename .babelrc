@@ -1,17 +1,3 @@
 {
-  "plugins": [
-    [
-      "module-resolver",
-      {
-        "root": ["."],
-        "alias": {
-          "components": "./components",
-          "styles": "./styles",
-          "utils": "./utils"
-        },
-        "cwd": "babelrc"
-      }
-    ]
-  ],
   "presets": ["next/babel"]
 }

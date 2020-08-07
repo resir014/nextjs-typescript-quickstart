@@ -5,6 +5,10 @@
     "jsx": "preserve",
     "lib": ["dom", "es2017"],
     "baseUrl": ".",
+    "paths": {
+      "~/components/*": ["components/*"],
+      "~/utils/*": ["utils/*"]
+    },
     "moduleResolution": "node",
     "strict": true,
     "allowJs": true,

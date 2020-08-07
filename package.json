@@ -18,24 +18,23 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "babel-plugin-module-resolver": "^3.2.0",
-    "date-fns": "^2.9.0",
-    "modern-normalize": "^0.6.0",
-    "next": "^9.2.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "date-fns": "^2.15.0",
+    "modern-normalize": "^0.7.0",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@types/node": "^12.6.2",
-    "@types/react": "^16.9.21",
-    "@types/react-dom": "^16.9.5",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
     "@types/styled-jsx": "^2.2.8",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.2",
     "eslint": "6.8.0",
     "eslint-config-blvd": "^1.0.2",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "typescript": "^3.5.3"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
   }
 }

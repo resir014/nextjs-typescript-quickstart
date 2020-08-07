@@ -1,10 +1,12 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-const Navigation: React.SFC = () => (
-  <header>
-    <div className="left">▲</div>
-    <nav className="right">
+import styles from './Navigation.module.css'
+
+const Navigation: React.FC = () => (
+  <header className={styles.root}>
+    <div className={styles.left}>▲</div>
+    <nav className={styles.right}>
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -12,43 +14,6 @@ const Navigation: React.SFC = () => (
         <a>About</a>
       </Link>
     </nav>
-    <style jsx>{`
-      header {
-        display: flex;
-        flex-direction: row;
-        padding: 0.75rem 1.5rem;
-        background-color: black;
-        color: white;
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-        margin: 0 0.75rem;
-      }
-
-      a:hover,
-      a:focus {
-        text-decoration: underline;
-      }
-
-      a:first-child {
-        margin-left: 0;
-      }
-
-      a:last-child {
-        margin-right: 0;
-      }
-
-      .left {
-        margin-right: 1.5rem;
-        user-select: none;
-      }
-
-      .right {
-        flex: 1 1 auto;
-      }
-    `}</style>
   </header>
 )
 
