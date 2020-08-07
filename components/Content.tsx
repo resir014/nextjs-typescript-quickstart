@@ -1,15 +1,9 @@
 import * as React from 'react'
 
-const Content: React.SFC = ({ children }) => (
-  <main>
-    {children}
-    <style jsx>{`
-      main {
-        flex: 1;
-        padding: 1.5rem;
-      }
-    `}</style>
-  </main>
-)
+import styles from './Content.module.css'
+
+const Content: React.FC = ({ children }) => {
+  return <main className={styles.root}>{children}</main>
+}
 
 export default Content

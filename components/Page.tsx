@@ -1,24 +1,18 @@
 import * as React from 'react'
 import Head from 'next/head'
 
+import styles from './Page.module.css'
+
 interface PageProps {
   title?: string
 }
 
-const Page: React.SFC<PageProps> = ({ children, title }) => (
-  <div className="root">
+const Page: React.FC<PageProps> = ({ children, title }) => (
+  <div className={styles.root}>
     <Head>
       <title>{title || 'Next.js TypeScript Quickstart'}</title>
     </Head>
     {children}
-    <style jsx>{`
-      .root {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        overflow-x: hidden;
-      }
-    `}</style>
   </div>
 )
 

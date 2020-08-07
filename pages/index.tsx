@@ -1,18 +1,20 @@
 import * as React from 'react'
+import { NextPage } from 'next'
 import Link from 'next/link'
 
-import Page from 'components/Page'
-import Navigation from 'components/Navigation'
-import Content from 'components/Content'
-import relativeTime from 'utils/relativeTime'
+import Page from '~/components/Page'
+import PageTitle from '~/components/PageTitle'
+import Navigation from '~/components/Navigation'
+import Content from '~/components/Content'
+import relativeTime from '~/utils/relativeTime'
 
 const lastUpdated = '2015-01-25T07:25:15+07:00'
 
-export default () => (
+const IndexPage: NextPage = () => (
   <Page>
     <Navigation />
     <Content>
-      <h1 className="title">Hello world.</h1>
+      <PageTitle>Hello world.</PageTitle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Certe non potest. Negabat igitur ullam esse artem, quae ipsa a se
         proficisceretur; Duo Reges: constructio interrete. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Non igitur
@@ -25,10 +27,7 @@ export default () => (
         </Link>
       </p>
     </Content>
-    <style jsx>{`
-      .title {
-        margin-top: 0;
-      }
-    `}</style>
   </Page>
 )
+
+export default IndexPage
