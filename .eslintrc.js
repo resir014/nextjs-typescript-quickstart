@@ -33,5 +33,10 @@ module.exports = {
       parserOptions: { sourceType: 'script' },
       env: { node: true }
     }
-  ]
+  ],
+  settings: {
+    'import/resolver': {
+      typescript: {}
+    }
+  }
 }

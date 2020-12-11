@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import 'modern-normalize'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
