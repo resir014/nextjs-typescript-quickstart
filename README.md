@@ -8,16 +8,20 @@ This is an example setup of Next.js building on top of the [official TypeScript 
 - Basic ESLint and Prettier setup
 - TypeScript typechecking as part of `test` script (ready to plug into any CI)
 
+## Deploy your own
+
+Deploy the example using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/resir014/nextjs-typescript-quickstart)
+
 ## How to use
 
-[Download the example](https://github.com/resir014/nextjs-typescript-quickstart/archive/master.zip) and then unzip it.
-
-Install it and run:
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-yarn
-yarn dev
+npx create-next-app --example https://github.com/resir014/nextjs-typescript-quickstart nextjs-typescript-quickstart-app
 # or
-npm install
-npm run dev
+yarn create next-app --example https://github.com/resir014/nextjs-typescript-quickstart nextjs-typescript-quickstart-app
 ```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js) ([Documentation](https://nextjs.org/docs/deployment)).
