@@ -1,42 +1,30 @@
 module.exports = {
   root: true,
-  extends: ['blvd/react', 'prettier', 'plugin:prettier/recommended', 'plugin:@next/next/recommended'],
+  extends: [
+    'kentcdodds',
+    'kentcdodds/react',
+    'kentcdodds/jsx-a11y',
+    'prettier',
+    'plugin:prettier/recommended',
+    'plugin:@next/next/recommended',
+  ],
   plugins: ['prettier'],
-  rules: {
-    'jsx-a11y/anchor-is-valid': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'prettier/prettier': 'error'
+  rules: {},
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
   },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: ['**/*.(d.)?ts(x)?'],
+      parser: '@typescript-eslint/parser',
       parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module',
-
-        // typescript-eslint specific options
-        warnOnUnsupportedTypeScriptVersion: true
+        project: './tsconfig.json',
       },
-      rules: {
-        'no-undef': 'off',
-        'no-unused-vars': 'off',
-        'spaced-comment': ['error', 'always', { markers: ['/'] }],
-        'import/no-unresolved': 'off',
-        '@typescript-eslint/camelcase': 'off',
-        '@typescript-eslint/explicit-function-return-type': ['off'],
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }]
-      }
+      rules: {},
     },
-    {
-      files: ['.eslintrc.js', '*.config.js'],
-      parserOptions: { sourceType: 'script' },
-      env: { node: true }
-    }
   ],
-  settings: {
-    'import/resolver': {
-      typescript: {}
-    }
-  }
-}
+};
