@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['blvd/react', 'prettier', 'prettier/@typescript-eslint', 'prettier/react', 'plugin:prettier/recommended'],
+  extends: ['blvd/react', 'prettier', 'plugin:prettier/recommended'],
   plugins: ['prettier'],
   rules: {
     'jsx-a11y/anchor-is-valid': 'off',
