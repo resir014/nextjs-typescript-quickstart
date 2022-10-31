@@ -8,6 +8,9 @@
 # Static export path
 out/
 
+# .tsbuildinfo file
+*.tsbuildinfo
+
 # Logs
 logs
 *.log
